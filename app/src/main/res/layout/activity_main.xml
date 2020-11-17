@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_One"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/allclear"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/rounded_sign_button"
+        android:onClick="allClear"
+        android:text="@string/ALL_Clear"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/allclear2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/rounded_sign_button"
+        android:fontFamily="monospace"
+        android:onClick="changeSign"
+        android:text="@string/Plus_Minus"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/allclear3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/rounded_sign_button"
+        android:fontFamily="monospace"
+        android:onClick="calcPercentage"
+        android:text="@string/Percentage"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Two"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Three"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="364dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Four"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Nine"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Eight"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Seven"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="364dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Six"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="364dp"
+        android:background="@drawable/rounded_key_button"
+        android:onClick="insert"
+        android:text="@string/Insert_Five"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="177dp"
+        android:text="@string/display_value"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

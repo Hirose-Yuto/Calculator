@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My First Application</string>
+    <string name="Insert_Zero">0</string>
+    <string name="Insert_One">1</string>
+    <string name="Insert_Two">2</string>
+    <string name="Insert_Three">3</string>
+    <string name="Insert_Four">4</string>
+    <string name="Insert_Five">5</string>
+    <string name="Insert_Six">6</string>
+    <string name="Insert_Seven">7</string>
+    <string name="Insert_Eight">8</string>
+    <string name="Insert_Nine">9</string>
+    <string name="Insert_dot">.</string>
+    <string name="ALL_Clear">AC</string>
+    <string name="display_value">0</string>
+    <string name="Plus_Minus">+/-</string>
+    <string name="Percentage">%</string>
+</resources>
