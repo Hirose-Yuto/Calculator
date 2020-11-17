@@ -5,5 +5,5 @@ enum class DoubleOperator {
 }
 
 enum class SingleOperator {
-    Insert, Frac
+    Insert, ChangeSign, Percentage, Frac
 }

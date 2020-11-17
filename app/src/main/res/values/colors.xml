@@ -5,8 +5,8 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="notPressedKeyColor">#333333</color>
     <color name="pressedKeyColor">#737373</color>
-    <color name="notPressedSymbolColor">#FEA00A</color>
-    <color name="pressedSysmbolColor">#000000</color>
+    <color name="notPressedOperatorColor">#FEA00A</color>
+    <color name="pressedOperatorColor">#FFFFFF</color>
     <color name="notPressedSignColor">#A5A5A5</color>
     <color name="pressedSignColor">#D9D9D9</color>
 </resources>

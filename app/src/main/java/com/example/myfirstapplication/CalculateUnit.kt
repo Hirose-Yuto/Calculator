@@ -21,16 +21,18 @@ public class CalculateUnit {
     fun singleOperator(operator: SingleOperator, option: Int = 0) {
         var tmpVal = when(calcState) {
             CalcState.Left -> leftVal
-            CalcState.Operator -> leftVal
+            CalcState.Operator -> rightVal
             CalcState.Right -> rightVal
         }
         tmpVal = when(operator) {
             SingleOperator.Insert -> insert(tmpVal, option)
+            SingleOperator.ChangeSign -> changeSign(tmpVal)
+            SingleOperator.Percentage -> percentage(tmpVal)
             SingleOperator.Frac -> frac(tmpVal)
         }
         when(calcState) {
             CalcState.Left -> leftVal = tmpVal
-            CalcState.Operator -> leftVal = tmpVal
+            CalcState.Operator -> rightVal = tmpVal
             CalcState.Right -> rightVal = tmpVal
         }
     }
@@ -66,8 +68,36 @@ public class CalculateUnit {
 
     /* Single Operator */
     // 数字キーによる入力
+    var dotPressed: Boolean = false
+    var digits: Int = 0
     private fun insert(value: Double, num: Int): Double {
-        return value * 10 + num
+        // ToDo:計算後insertするときは上書きする処理にする．
+        if(calcState == CalcState.Operator) {
+            calcState = CalcState.Right
+        }
+        var returnValue = 0.0
+        if(num == -1) {
+            dotPressed = true
+            returnValue = value
+        } else{
+            if(dotPressed) {
+                digits++
+                returnValue = value + num / Math.pow(10.0, digits.toDouble())
+            } else {
+                returnValue = value * 10 + num
+            }
+        }
+        return returnValue
+    }
+
+    // 正負入れ替え
+    private fun changeSign(value: Double): Double {
+        return -value
+    }
+
+    // 百分率
+    private fun percentage(value: Double): Double {
+        return value/100
     }
 
     // 1/x
@@ -121,6 +151,8 @@ public class CalculateUnit {
                 rightVal = 0.0
             }
         }
+        dotPressed = false
+        digits = 0
     }
 
     // ACキー
@@ -129,6 +161,8 @@ public class CalculateUnit {
         operator = DoubleOperator.Nothing
         rightVal = 0.0
         calcState = CalcState.Left
+        dotPressed = false
+        digits = 0
     }
 
     // どの入力をしているか取得
